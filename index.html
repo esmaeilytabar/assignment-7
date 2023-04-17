@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form Validation Tool</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Form Validation Tool</h2>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+      <div class="input-group">
+        <label for="name"><i class="material-icons">account_circle</i>Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+      </div>
+      <div class="input-group">
+        <label for="email"><i class="material-icons">email</i>Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+      </div>
+      <div class="input-group">
+        <label for="phone"><i class="material-icons">phone</i>Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+      </div>
+      <div class="input-group">
+        <label for="password"><i class="material-icons">lock</i>Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <script src="validateForm.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
